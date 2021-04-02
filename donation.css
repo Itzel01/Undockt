@@ -1,0 +1,104 @@
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+main {
+    background-image: url('https://indianamemberscreditunion.files.wordpress.com/2019/02/community-service_605300333.jpg');
+    background-size:cover;
+}
+
+.text {
+    animation: fadeIn 2s;
+}
+
+#carousel-top-level {
+    opacity: 0;
+    animation: fadeIn 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.text2 {
+    opacity: 0;
+    animation: fadeIn 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#maincarousel {
+    width:80%;
+    height:50%;
+    display:block;
+    margin: 2em auto;
+}
+.carousel-item img{
+    
+    height:28rem;
+    object-fit: contain;
+}
+.imgmyth{
+        display: block;
+        height: auto;
+        max-width: 100%;
+        line-height: 1;
+        margin:auto;
+        width: 100%;
+}
+.imgtax{
+       display: block;
+        height:auto;
+        max-width: 100%;
+        line-height: 1;
+        margin:auto;
+        width: 100%;
+  
+}
+.imghelp{
+        display: block;
+        height: auto;
+        max-width: 100%;
+        line-height: 1;
+        margin:auto;
+        width: 100%;
+}
+
+.text, .text2 {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.45);
+    text-align:center;
+}
+
+.text p, .text2 p{
+    max-width: 90%;
+    margin: 0;
+}
+
+.text2 a:hover{
+    text-decoration: none;
+}
+
+
+.images .image1{
+    display:flex;
+    align-self:center;
+    width:43%;
+    height:60%;
+}
+
+
+@media screen and (min-width: 900px){
+    .text p, .text2 p {
+        max-width: 75%;
+        margin: 0;
+    }
+    
+}

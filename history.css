@@ -1,0 +1,121 @@
+@keyframes slideFromBottom {
+    0% {
+        position: absolute;
+        transform: translateY(1000px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideFromTop {
+    0% {
+        position: absolute;
+        transform: translateY(-1000px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        position: absolute;
+        border: none;
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        position: absolute;
+        border: none;
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+.bigBoxD2 .containerD {
+    animation: slideFromBottom 2s;
+}
+
+.bigBoxD1 .containerD {
+    animation: slideFromTop 2s;
+}
+
+.bigBoxD2 .containerVD {
+    animation: slideFromLeft 2s;
+}
+
+.bigBoxD1 .containerVD {
+    animation: slideFromRight 2s;
+}
+
+.stereotypes{
+    width: 85%;
+    margin: 3em auto;
+}
+
+.bigBoxM{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+.containerM{
+    width: 90%;
+    margin: auto;
+}
+
+.containerVM {
+    border: 3px solid #961D7A;
+}
+
+.bigBoxD{
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 900px){
+    .bigBoxD{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 500px;
+}
+    .containerD{
+    padding: 0 1%;
+    width: 45%;
+    overflow-y: scroll;
+    margin: 10px;
+    }
+    
+    .containerVD{
+    width: 50%;
+    margin: 10px;
+    border: 3px solid #961D7A;
+    }
+    
+    .container li{
+    margin: 30px;
+    }
+    
+    .bigBoxM{
+    display: none;
+    }
+}
